@@ -1,0 +1,27 @@
+body, html {
+    font-family: Verdana;
+    color: #FFFFFF;
+    background-image: url(crosshatch.png);
+    margin: 0;
+    height: 100%;
+}
+
+#column {
+    margin: 0 auto;
+    width: 980px;
+}
+
+#header {
+    margin-top: 24px;
+}
+
+#content {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.box {
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.33);
+}
