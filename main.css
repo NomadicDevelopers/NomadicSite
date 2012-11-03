@@ -25,3 +25,116 @@ body, html {
     background-color: rgb(40, 40, 40);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.33);
 }
+
+.boxhead {
+    background-color: rgb(40, 40, 40);
+}
+
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 30px; /* corresponds to 'line-height' of a.navbartitle below */
+  margin: 0; border: 0; padding: 0;
+  background-color: #212121; 
+}
+
+a.navbartitle {
+  display: block; 
+  float: left;
+  color: white;
+  background-color:  #212121;
+  font-family: Verdana, Arial, Geneva,  Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0; border: 0; padding: 0;
+  line-height: 30px; /* corresponds to 'top' value of .submenu below */
+  text-align: center;
+  text-decoration:none;
+}
+a.navbartitle:hover {
+  background-color: #969696;
+}
+/* menu title widths */
+#t1 { width: 104px; }
+#t2 { width: 104px; }
+#t3 { width: 104px; }
+#t4 { width: 104px; }
+#t5 { width: 104px; }
+
+
+/* gallery scroller */
+#gallery
+{
+    margin-top: 25px;
+    padding-top: 2px;
+
+    width: 970px;
+    height: 322px;
+
+    color: #f2f2f2;
+
+    text-align: center;
+
+    /* background: #202328 url('images/gallery_bg.png') no-repeat left top; */
+}
+
+#galleryContainer
+{
+    width: 970px;
+    height: 320px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#gallery #galleryContainer .slide
+{
+    position: relative;
+    width: 970px;
+    height: 320px;
+}
+
+#gallery #galleryContainer .slideInfo
+{
+    position: absolute;
+    display: none;
+    padding: 5px;
+    margin-top: 290px;
+
+    width: 970px;
+    height: 20px;
+    
+    font-size: 120%;
+
+    background: rgba(32,35,40,0.65);    
+}
+
+#galleryControlLeft, #galleryControlRight
+{
+    position: absolute;
+    display: none;
+
+    /* SUPER IMPORTANT POSITION FIX */
+    margin-top: -340px;
+    margin-left: -485px;
+
+    width: 80px;
+    height: 60px;
+
+    cursor: pointer;
+
+    background: #202328;
+    opacity: .5;
+}
+
+#galleryControlRight
+{
+    /* SUPER IMPORTANT POSITION FIX */
+    margin-left: 410px;
+}
+
+#galleryControlLeft:hover, #galleryControlRight:hover
+{
+    opacity: 1;
+}
