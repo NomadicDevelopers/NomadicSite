@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <!-- Yay metadata! -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="Description" content="Professionally developing mobile applications and websites for clients.">
+
+        <title>Nomadic - The Devs</title>
+        <link rel="shortcut icon"   href="../favicon.png">
+        <link rel="stylesheet"      href="../main.css">
+
+        <script>
+        
+            function AddDeveloper( name, desc, website, websitename )
+            {
+
+                //Make some easy thing for adding devs
+                var newHTML = "<div class='developer'>"
+                newHTML += "<h3>" + name + " </h3>"
+                newHTML += desc
+                if ( website && websitename )
+                {
+                    newHTML += "<br><a id='devlink' href='" + website + "'>" + websitename + "</a>"
+                }
+
+                newHTML += "</div>"
+                //newHTML += "<br>"
+
+                //add it to the html
+                document.getElementById("developers").innerHTML += newHTML
+            }
+            
+            function AddDevs()
+            {
+                AddDeveloper("Scott Kauker", "what a nutjb", "http://www.foohy.net", "Foohy.net")
+                AddDeveloper("Naelstrof", "What a nutjob", "Steam", "http://steamcommunity.com/id/Naelstrof")
+                AddDeveloper("Duskling", "What a nutjob", "Steam", "http://steamcommunity.com/id/duskling")
+                AddDeveloper("GamingRobot32", "What a nutjob", "Steam", "http://steamcommunity.com/id/gamingrobot")
+                AddDeveloper("Geel9", "What a nutjerb", "Steam", "http://steamcommunity.com/id/geel9")
+                AddDeveloper("Perl", "What a nutjob", "Steam", "http://steamcommunity.com/id/wtfOo")
+                AddDeveloper("Skippy", "What a job", "Steam", "http://steamcommunity.com/groups/nomadicdevelopers")
+                AddDeveloper("neos300", "What a nutjob", "Steam", "http://steamcommunity.com/id/neos300")
+            }
+
+            window.onload = AddDevs;
+        </script>
+    </head>
+
+    <link rel="../stylesheet" type="text/css" href="data:text/css,">
+
+    <!-- Content -->
+    <body>
+        <div id="column">
+            <div id="header" class="boxhead">
+                <img src="../logo.png"></img>
+                <div class="navbar">
+                    <a class="navbartitle" id="t1" href="../index.php">News</a>
+                    <a class="navbartitle" id="t2" href="projects.html">Projects</a>
+                    <a class="navbartitle" id="t3" href="developers.html">Developers</a>
+                    <a class="navbartitle" id="t4" href="content.html">Content</a>
+                    <a class="navbartitle" id="t5" href="about.html">About Us</a>
+                </div>
+            </div>
+
+            <div id="content" class="box">
+                <div id="developers">
+                    <h2>The developers of Nomadic</h2>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

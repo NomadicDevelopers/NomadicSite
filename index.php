@@ -19,13 +19,13 @@
     <body>
         <div id="column">
             <div id="header" class="boxhead">
-                <img src="sm_logo.png"></img>
+                <img src="logo.png"></img>
                 <div class="navbar">
                     <a class="navbartitle" id="t1" href="index.php">News</a>
-                    <a class="navbartitle" id="t2" href="nowherelmao.html">Projects</a>
-                    <a class="navbartitle" id="t3" href="nowherelmao.html">Developers</a>
-                    <a class="navbartitle" id="t4" href="nowherelmao.html">Content</a>
-                    <a class="navbartitle" id="t5" href="nowherelmao.html">About Us</a>
+                    <a class="navbartitle" id="t2" href="pages/projects.html">Projects</a>
+                    <a class="navbartitle" id="t3" href="pages/developers.html">Developers</a>
+                    <a class="navbartitle" id="t4" href="pages/content.html">Content</a>
+                    <a class="navbartitle" id="t5" href="pages/about.html">About Us</a>
                 </div>
             </div>
 
@@ -57,7 +57,23 @@
             <img class="galleryControl" id="galleryControlRight" src="images/gallery_arrowright.png"/>
 
             <div id="content" class="box">
-                Description of what we do with examples of our work.
+
+                <div class="infoCell" >
+                    <h3>What We Do</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dolor enim. Phasellus ac justo. </p>
+                </div>
+
+                <div class="infoCell">
+                    <h3>Our Experience</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dolor enim. Phasellus ac justo. </p>
+                </div>
+
+                <div class="infoCell">
+                    <h3>Future</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dolor enim. Phasellus ac justo. </p>
+                </div>
+
+                <h3 class="text_line">Hooray!</h3>
             </div>
         </div>
     </body>

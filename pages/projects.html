@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <!-- Yay metadata! -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="Description" content="Professionally developing mobile applications and websites for clients.">
+
+        <title>Nomadic - Projects</title>
+        <link rel="shortcut icon"   href="../favicon.png">
+        <link rel="stylesheet"      href="../main.css">
+
+        <script>
+        
+            function AddProject( name, website, released, img )
+            {
+
+                //Make some easy thing for adding devs
+                var newHTML = "<div class='project'>"
+                newHTML += "<a class='project' href='" + website + "'>"
+                newHTML += "<img class='project' src='" + img + "'></img>"
+                newHTML += "<h3>" + name + " </h3>"
+                newHTML += "<font class='project' id='date'>" + released + "</font>"
+
+                newHTML += "</a>"
+                newHTML += "</div>"
+                //newHTML += "<br>"
+
+                //add it to the html
+                document.getElementById("developers").innerHTML += newHTML
+            }
+            
+            function AddProjects()
+            {
+                AddProject( "Deep and Meaningful", "A serious, heart-wrenching game of deeps and meaningfuls", "December 21st, 2012", "../images/projects/proj1.png" )
+
+                AddProject( "The Man who Couldn't Art", "What happens if someone can't draw a stick figure?", "August, 1953", "../images/projects/proj2.png" )
+
+                AddProject( "VIDEO GAMES: THE GAME", "A game of games. The game of games.", "January 20, 2012", "../images/projects/proj3.png" )
+
+                AddProject( "The Jig", "Better than a jigsaw puzzle", "Unreleased", "../images/projects/unreleased.png" )
+            }
+
+            window.onload = AddProjects;
+        </script>
+    </head>
+
+    <link rel="../stylesheet" type="text/css" href="data:text/css,">
+
+    <!-- Content -->
+    <body>
+        <div id="column">
+            <div id="header" class="boxhead">
+                <img src="../logo.png"></img>
+                <div class="navbar">
+                    <a class="navbartitle" id="t1" href="../index.php">News</a>
+                    <a class="navbartitle" id="t2" href="projects.html">Projects</a>
+                    <a class="navbartitle" id="t3" href="developers.html">Developers</a>
+                    <a class="navbartitle" id="t4" href="content.html">Content</a>
+                    <a class="navbartitle" id="t5" href="about.html">About Us</a>
+                </div>
+            </div>
+
+            <div id="content" class="box">
+                <div id="developers">
+                    <h2>Projects</h2>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
