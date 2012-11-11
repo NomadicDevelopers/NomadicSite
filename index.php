@@ -44,12 +44,7 @@
                     <img src="images/banners/banner2.png"/>
                 </a>
             </div>
-            <div class="slide">
-                <a href="/nerdslmao/">
-                    <div class="slideInfo">Visit Website</div>
-                    <img src="images/banners/banner1.png"/>
-                </a>
-            </div>
+
             </div>
 
             <br/>
