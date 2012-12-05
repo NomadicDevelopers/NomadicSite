@@ -12,19 +12,21 @@
 
         <script>
         
-            function AddProject( name, website, released, img )
+            function AddProject( name, description, released, img, website )
             {
 
                 //Make some easy thing for adding devs
                 var newHTML = "<div class='project'>"
-                newHTML += "<a class='project' href='" + website + "'>"
-                newHTML += "<img class='project' src='" + img + "'></img>"
+                if (website != null)
+                {
+                    newHTML += "<a class='project' href='" + website + "'>"
+                }
+                newHTML += "<img class='project' src='" + img + "' title='" +  description +"'></img>"
                 newHTML += "<h3>" + name + " </h3>"
                 newHTML += "<font class='project' id='date'>" + released + "</font>"
 
                 newHTML += "</a>"
                 newHTML += "</div>"
-                //newHTML += "<br>"
 
                 //add it to the html
                 document.getElementById("developers").innerHTML += newHTML
@@ -32,13 +34,13 @@
             
             function AddProjects()
             {
-                AddProject( "Deep and Meaningful", "A serious, heart-wrenching game of deeps and meaningfuls", "December 21st, 2012", "../images/projects/proj1.png" )
+                AddProject( "Farm Scheduling", "Schedule your farm trips with this super easy online planner!", "November 25, 2012", "../images/projects/proj1.png", "http://farmpolice.com/" )
 
-                AddProject( "The Man who Couldn't Art", "What happens if someone can't draw a stick figure?", "August, 1953", "../images/projects/proj2.png" )
+                AddProject( "Placeholder", "It holds its&#39; place rather efficiently.", "Unreleased", "../images/projects/unreleased.png", null )
 
-                AddProject( "VIDEO GAMES: THE GAME", "A game of games. The game of games.", "January 20, 2012", "../images/projects/proj3.png" )
+               // AddProject( "VIDEO GAMES: THE GAME", "A game of games. The game of games.", "January 20, 2012", "../images/projects/proj3.png", null )
 
-                AddProject( "The Jig", "Better than a jigsaw puzzle", "Unreleased", "../images/projects/unreleased.png" )
+               // AddProject( "The Jig", "Better than a jigsaw puzzle", "Unreleased", "../images/projects/unreleased.png", null )
             }
 
             window.onload = AddProjects;
@@ -51,7 +53,7 @@
     <body>
         <div id="column">
             <div id="header" class="boxhead">
-                <img src="../logo.png"></img>
+                <a href='../index.php'><img src="../logo.png"></img></a>
                 <div class="navbar">
                     <a class="navbartitle" id="t1" href="../index.php">News</a>
                     <a class="navbartitle" id="t2" href="projects.html">Projects</a>
@@ -64,6 +66,7 @@
             <div id="content" class="box">
                 <div id="developers">
                     <h2>Projects</h2>
+                    <noscript> Please enable JavaScript - or our project will be getting you to enable it!</noscript>
                     <br>
                 </div>
             </div>

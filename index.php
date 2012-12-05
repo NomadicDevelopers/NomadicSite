@@ -19,7 +19,7 @@
     <body>
         <div id="column">
             <div id="header" class="boxhead">
-                <img src="logo.png"></img>
+                <a href='index.php'><img src="logo.png"></img></a>
                 <div class="navbar">
                     <a class="navbartitle" id="t1" href="index.php">News</a>
                     <a class="navbartitle" id="t2" href="pages/projects.html">Projects</a>
@@ -33,7 +33,7 @@
             <div id="content"><div id="gallery">
             <div id="galleryContainer">
                     <div class="slide">
-                <a href="http://www.foohy.net">
+                <a href="http://farmpolice.com/">
                     <div class="slideInfo">Visit Website</div>
                     <img src="images/banners/banner3.png"/>
                 </a>
@@ -68,7 +68,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dolor enim. Phasellus ac justo. </p>
                 </div>
 
-                <h3 class="text_line">Hooray!</h3>
+            </div>
+
+            <div id="copyrightbox">
+                <br>
+                <p class="faded">&copy Nomadic LLC</p>
             </div>
         </div>
     </body>
